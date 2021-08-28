@@ -36,6 +36,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--clr-dark);
+  z-index: 999;
 }
 
 .loader {
@@ -332,6 +333,15 @@ header {
   bottom: 6px;
 }
 
+@media (max-width: 891px) and (min-width: 350px) {
+  .hamburger {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: 1.5em;
+  }
+}
+
 /* Intro Section */
 .intro {
   position: relative;
@@ -511,6 +521,7 @@ header {
 /* Footer */
 
 .footer {
+  width: 100%;
   background: #111;
   color: var(--clr-light);
   text-align: center;
